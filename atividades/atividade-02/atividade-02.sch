@@ -8701,14 +8701,15 @@ Source: Panasonic</description>
 <part name="R2" library="rcl" library_urn="urn:adsk.eagle:library:334" deviceset="R-US_" device="0204/5" package3d_urn="urn:adsk.eagle:package:23488/1" value="10K"/>
 <part name="R3" library="rcl" library_urn="urn:adsk.eagle:library:334" deviceset="R-US_" device="0204/5" package3d_urn="urn:adsk.eagle:package:23488/1" value="6.8K"/>
 <part name="LED" library="led" library_urn="urn:adsk.eagle:library:259" deviceset="LED" device="3MM" package3d_urn="urn:adsk.eagle:package:15797/1"/>
-<part name="P+4" library="supply1" library_urn="urn:adsk.eagle:library:371" deviceset="VCC" device=""/>
+<part name="P+4" library="supply1" library_urn="urn:adsk.eagle:library:371" deviceset="VCC" device="" value="Load +ve"/>
 <part name="X_7" library="ngspice-simulation" library_urn="urn:adsk.eagle:library:527439" deviceset="GND" device=""/>
 <part name="Q1" library="transistor-small-signal" library_urn="urn:adsk.eagle:library:401" deviceset="BS170" device="" package3d_urn="urn:adsk.eagle:package:29751/2"/>
-<part name="TP1" library="testpad" library_urn="urn:adsk.eagle:library:385" deviceset="TPSQ" device="PAD1-20" package3d_urn="urn:adsk.eagle:package:27950/1"/>
-<part name="TP2" library="testpad" library_urn="urn:adsk.eagle:library:385" deviceset="TPSQ" device="PAD1-20" package3d_urn="urn:adsk.eagle:package:27950/1"/>
+<part name="TPA" library="testpad" library_urn="urn:adsk.eagle:library:385" deviceset="TPSQ" device="PAD1-20" package3d_urn="urn:adsk.eagle:package:27950/1"/>
+<part name="TPB" library="testpad" library_urn="urn:adsk.eagle:library:385" deviceset="TPSQ" device="PAD1-20" package3d_urn="urn:adsk.eagle:package:27950/1"/>
 <part name="P+5" library="supply1" library_urn="urn:adsk.eagle:library:371" deviceset="VCC" device="" value="+9v"/>
-<part name="R4" library="rcl" library_urn="urn:adsk.eagle:library:334" deviceset="R-US_" device="0204/5" package3d_urn="urn:adsk.eagle:package:23488/1" value="7W"/>
+<part name="R4" library="rcl" library_urn="urn:adsk.eagle:library:334" deviceset="R-US_" device="0204/5" package3d_urn="urn:adsk.eagle:package:23488/1" value="1R 7W"/>
 <part name="R5" library="pot" library_urn="urn:adsk.eagle:library:331" deviceset="US-EVU" device="M" package3d_urn="urn:adsk.eagle:package:22734/1" technology="F2" value="50K"/>
+<part name="P+2" library="supply1" library_urn="urn:adsk.eagle:library:371" deviceset="VCC" device="" value="Load -ve"/>
 </parts>
 <sheets>
 <sheet>
@@ -8746,19 +8747,19 @@ Source: Panasonic</description>
 <attribute name="NAME" x="100.076" y="109.728" size="1.778" layer="95" rot="R90"/>
 <attribute name="VALUE" x="102.235" y="109.728" size="1.778" layer="96" rot="R90"/>
 </instance>
-<instance part="P+4" gate="VCC" x="116.84" y="99.06" smashed="yes" rot="R270">
-<attribute name="VALUE" x="114.3" y="101.6" size="1.778" layer="96"/>
+<instance part="P+4" gate="VCC" x="129.54" y="99.06" smashed="yes" rot="R270">
+<attribute name="VALUE" x="127" y="101.6" size="1.778" layer="96"/>
 </instance>
-<instance part="X_7" gate="G$1" x="116.84" y="91.44" smashed="yes"/>
+<instance part="X_7" gate="G$1" x="116.84" y="86.36" smashed="yes"/>
 <instance part="Q1" gate="1" x="106.68" y="73.66" smashed="yes">
 <attribute name="NAME" x="111.76" y="76.2" size="1.778" layer="95"/>
 <attribute name="VALUE" x="111.76" y="73.66" size="1.778" layer="96"/>
 </instance>
-<instance part="TP1" gate="G$1" x="71.12" y="78.74" smashed="yes" rot="R180">
+<instance part="TPA" gate="G$1" x="71.12" y="78.74" smashed="yes" rot="R180">
 <attribute name="NAME" x="73.66" y="83.185" size="1.778" layer="95" rot="R180"/>
 <attribute name="TP_SIGNAL_NAME" x="68.58" y="80.01" size="1.778" layer="97" rot="R180"/>
 </instance>
-<instance part="TP2" gate="G$1" x="111.76" y="63.5" smashed="yes" rot="R90">
+<instance part="TPB" gate="G$1" x="111.76" y="63.5" smashed="yes" rot="R90">
 <attribute name="NAME" x="116.205" y="60.96" size="1.778" layer="95" rot="R90"/>
 <attribute name="TP_SIGNAL_NAME" x="113.03" y="66.04" size="1.778" layer="97" rot="R90"/>
 </instance>
@@ -8772,6 +8773,9 @@ Source: Panasonic</description>
 <instance part="R5" gate="G$1" x="10.16" y="78.74" smashed="yes">
 <attribute name="NAME" x="5.08" y="76.2" size="1.778" layer="95" rot="R90"/>
 <attribute name="VALUE" x="7.62" y="76.2" size="1.778" layer="96" rot="R90"/>
+</instance>
+<instance part="P+2" gate="VCC" x="129.54" y="91.44" smashed="yes" rot="R270">
+<attribute name="VALUE" x="127" y="93.98" size="1.778" layer="96"/>
 </instance>
 </instances>
 <busses>
@@ -8794,12 +8798,18 @@ Source: Panasonic</description>
 <pinref part="Q1" gate="1" pin="D"/>
 <pinref part="P+4" gate="VCC" pin="VCC"/>
 <wire x1="109.22" y1="78.74" x2="109.22" y2="99.06" width="0.1524" layer="91"/>
-<wire x1="109.22" y1="99.06" x2="114.3" y2="99.06" width="0.1524" layer="91"/>
+<wire x1="109.22" y1="99.06" x2="127" y2="99.06" width="0.1524" layer="91"/>
 </segment>
 <segment>
 <pinref part="R5" gate="G$1" pin="E"/>
 <pinref part="P+1" gate="VCC" pin="VCC"/>
 <wire x1="10.16" y1="86.36" x2="10.16" y2="91.44" width="0.1524" layer="91"/>
+</segment>
+<segment>
+<pinref part="P+2" gate="VCC" pin="VCC"/>
+<pinref part="X_7" gate="G$1" pin="0"/>
+<wire x1="127" y1="91.44" x2="116.84" y2="91.44" width="0.1524" layer="91"/>
+<wire x1="116.84" y1="91.44" x2="116.84" y2="86.36" width="0.1524" layer="91"/>
 </segment>
 </net>
 <net name="0" class="0">
@@ -8842,7 +8852,7 @@ Source: Panasonic</description>
 <pinref part="R1" gate="G$1" pin="2"/>
 <pinref part="R2" gate="G$1" pin="1"/>
 <wire x1="55.88" y1="76.2" x2="63.5" y2="76.2" width="0.1524" layer="91"/>
-<pinref part="TP1" gate="G$1" pin="TP"/>
+<pinref part="TPA" gate="G$1" pin="TP"/>
 <wire x1="63.5" y1="76.2" x2="71.12" y2="76.2" width="0.1524" layer="91"/>
 <junction x="63.5" y="76.2"/>
 <pinref part="IC1" gate="B" pin="+IN"/>
@@ -8854,7 +8864,7 @@ Source: Panasonic</description>
 <segment>
 <pinref part="IC1" gate="B" pin="-IN"/>
 <wire x1="78.74" y1="71.12" x2="78.74" y2="63.5" width="0.1524" layer="91"/>
-<pinref part="TP2" gate="G$1" pin="TP"/>
+<pinref part="TPB" gate="G$1" pin="TP"/>
 <wire x1="78.74" y1="63.5" x2="109.22" y2="63.5" width="0.1524" layer="91"/>
 <pinref part="Q1" gate="1" pin="S"/>
 <wire x1="109.22" y1="63.5" x2="109.22" y2="68.58" width="0.1524" layer="91"/>
