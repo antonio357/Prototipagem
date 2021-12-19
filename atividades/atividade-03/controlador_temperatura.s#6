@@ -8110,7 +8110,7 @@ Source: http://www.bourns.com/data/global/PDFs/3223.PDF</description>
 <pinref part="V1" gate="1" pin="S"/>
 </segment>
 </net>
-<net name="N$8" class="0">
+<net name="A4" class="0">
 <segment>
 <pinref part="LCD" gate="G$1" pin="RS"/>
 <wire x1="86.36" y1="48.26" x2="86.36" y2="43.18" width="0.1524" layer="91"/>
@@ -8134,35 +8134,35 @@ Source: http://www.bourns.com/data/global/PDFs/3223.PDF</description>
 <wire x1="76.2" y1="30.48" x2="78.74" y2="30.48" width="0.1524" layer="91"/>
 </segment>
 </net>
-<net name="N$9" class="0">
+<net name="A5" class="0">
 <segment>
 <pinref part="LCD" gate="G$1" pin="E"/>
 <wire x1="91.44" y1="48.26" x2="91.44" y2="43.18" width="0.1524" layer="91"/>
 <label x="91.44" y="43.18" size="1.778" layer="95" rot="R270"/>
 </segment>
 </net>
-<net name="N$10" class="0">
+<net name="D2" class="0">
 <segment>
 <pinref part="LCD" gate="G$1" pin="DB4"/>
 <wire x1="104.14" y1="48.26" x2="104.14" y2="43.18" width="0.1524" layer="91"/>
 <label x="104.14" y="43.18" size="1.778" layer="95" rot="R270"/>
 </segment>
 </net>
-<net name="N$11" class="0">
+<net name="D3" class="0">
 <segment>
 <pinref part="LCD" gate="G$1" pin="DB5"/>
 <wire x1="106.68" y1="48.26" x2="106.68" y2="43.18" width="0.1524" layer="91"/>
 <label x="106.68" y="43.18" size="1.778" layer="95" rot="R270"/>
 </segment>
 </net>
-<net name="N$12" class="0">
+<net name="D4" class="0">
 <segment>
 <pinref part="LCD" gate="G$1" pin="DB6"/>
 <wire x1="109.22" y1="48.26" x2="109.22" y2="43.18" width="0.1524" layer="91"/>
 <label x="109.22" y="43.18" size="1.778" layer="95" rot="R270"/>
 </segment>
 </net>
-<net name="N$13" class="0">
+<net name="D5" class="0">
 <segment>
 <pinref part="LCD" gate="G$1" pin="DB7"/>
 <wire x1="111.76" y1="48.26" x2="111.76" y2="43.18" width="0.1524" layer="91"/>
