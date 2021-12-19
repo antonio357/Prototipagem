@@ -8364,11 +8364,14 @@ Source: http://www.bourns.com/data/global/PDFs/3223.PDF</description>
 <wire x1="160.02" y1="12.7" x2="160.02" y2="48.26" width="0.1524" layer="91"/>
 </segment>
 </net>
-<net name="N$15" class="0">
+<net name="D7" class="0">
 <segment>
 <pinref part="DS18B20" gate="-2" pin="KL"/>
 <pinref part="R12" gate="G$1" pin="2"/>
 <wire x1="170.18" y1="-22.86" x2="162.56" y2="-22.86" width="0.1524" layer="91"/>
+<wire x1="162.56" y1="-22.86" x2="157.48" y2="-22.86" width="0.1524" layer="91"/>
+<junction x="162.56" y="-22.86"/>
+<label x="152.4" y="-22.86" size="1.778" layer="95"/>
 </segment>
 </net>
 </nets>

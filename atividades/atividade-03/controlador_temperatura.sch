@@ -8332,36 +8332,40 @@ Source: http://www.bourns.com/data/global/PDFs/3223.PDF</description>
 <label x="93.98" y="-45.72" size="1.778" layer="95"/>
 </segment>
 </net>
-<net name="N$10" class="0">
+<net name="A0" class="0">
 <segment>
 <pinref part="BUTTONS" gate="G$1" pin="5"/>
 <wire x1="167.64" y1="48.26" x2="167.64" y2="35.56" width="0.1524" layer="91"/>
 <pinref part="R8" gate="G$1" pin="2"/>
 <wire x1="167.64" y1="35.56" x2="172.72" y2="35.56" width="0.1524" layer="91"/>
+<label x="167.64" y="35.56" size="1.778" layer="95" rot="R270"/>
 </segment>
 </net>
-<net name="N$11" class="0">
+<net name="A1" class="0">
 <segment>
 <pinref part="R9" gate="G$1" pin="2"/>
 <wire x1="172.72" y1="27.94" x2="165.1" y2="27.94" width="0.1524" layer="91"/>
 <pinref part="BUTTONS" gate="G$1" pin="4"/>
 <wire x1="165.1" y1="27.94" x2="165.1" y2="48.26" width="0.1524" layer="91"/>
+<label x="165.1" y="27.94" size="1.778" layer="95" rot="R270"/>
 </segment>
 </net>
-<net name="N$12" class="0">
+<net name="A2" class="0">
 <segment>
 <pinref part="R10" gate="G$1" pin="2"/>
 <wire x1="172.72" y1="20.32" x2="162.56" y2="20.32" width="0.1524" layer="91"/>
 <pinref part="BUTTONS" gate="G$1" pin="3"/>
 <wire x1="162.56" y1="20.32" x2="162.56" y2="48.26" width="0.1524" layer="91"/>
+<label x="162.56" y="20.32" size="1.778" layer="95" rot="R270"/>
 </segment>
 </net>
-<net name="N$13" class="0">
+<net name="A3" class="0">
 <segment>
 <pinref part="R11" gate="G$1" pin="2"/>
 <wire x1="172.72" y1="12.7" x2="160.02" y2="12.7" width="0.1524" layer="91"/>
 <pinref part="BUTTONS" gate="G$1" pin="2"/>
 <wire x1="160.02" y1="12.7" x2="160.02" y2="48.26" width="0.1524" layer="91"/>
+<label x="160.02" y="12.7" size="1.778" layer="95" rot="R270"/>
 </segment>
 </net>
 <net name="D7" class="0">
