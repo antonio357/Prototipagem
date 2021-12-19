@@ -6,7 +6,7 @@
 <setting alwaysvectorfont="no"/>
 <setting verticaltext="up"/>
 </settings>
-<grid distance="50" unitdist="mil" unit="mm" style="lines" multiple="1" display="yes" altdistance="5" altunitdist="mil" altunit="mil"/>
+<grid distance="50" unitdist="mil" unit="mil" style="lines" multiple="1" display="no" altdistance="5" altunitdist="mil" altunit="mil"/>
 <layers>
 <layer number="1" name="Top" color="4" fill="1" visible="yes" active="yes"/>
 <layer number="2" name="Route2" color="16" fill="1" visible="no" active="no"/>
@@ -52,7 +52,7 @@
 <layer number="42" name="bRestrict" color="1" fill="10" visible="yes" active="yes"/>
 <layer number="43" name="vRestrict" color="2" fill="10" visible="yes" active="yes"/>
 <layer number="44" name="Drills" color="7" fill="1" visible="no" active="yes"/>
-<layer number="45" name="Holes" color="7" fill="1" visible="yes" active="yes"/>
+<layer number="45" name="Holes" color="7" fill="1" visible="no" active="yes"/>
 <layer number="46" name="Milling" color="3" fill="1" visible="no" active="yes"/>
 <layer number="47" name="Measures" color="7" fill="1" visible="no" active="yes"/>
 <layer number="48" name="Document" color="7" fill="1" visible="yes" active="yes"/>
@@ -120,18 +120,10 @@
 </layers>
 <board>
 <plain>
-<wire x1="0" y1="0" x2="0" y2="53.34" width="0.1524" layer="20"/>
-<wire x1="0" y1="0" x2="66.04" y2="0" width="0.1524" layer="20"/>
-<wire x1="66.04" y1="0" x2="66.04" y2="2.54" width="0.1524" layer="20"/>
-<wire x1="66.04" y1="2.54" x2="68.58" y2="5.08" width="0.1524" layer="20"/>
-<wire x1="68.58" y1="5.08" x2="68.58" y2="38.1" width="0.1524" layer="20"/>
-<wire x1="68.58" y1="38.1" x2="66.04" y2="40.64" width="0.1524" layer="20"/>
-<wire x1="66.04" y1="40.64" x2="66.04" y2="52.07" width="0.1524" layer="20"/>
-<wire x1="66.04" y1="52.07" x2="64.77" y2="53.34" width="0.1524" layer="20"/>
-<wire x1="0" y1="53.34" x2="64.77" y2="53.34" width="0.1524" layer="20"/>
-<hole x="15.24" y="50.8" drill="3"/>
-<hole x="65.913" y="35.941" drill="3"/>
-<hole x="66.04" y="7.62" drill="3"/>
+<wire x1="0" y1="0" x2="160" y2="0" width="0" layer="20"/>
+<wire x1="160" y1="0" x2="160" y2="100" width="0" layer="20"/>
+<wire x1="160" y1="100" x2="0" y2="100" width="0" layer="20"/>
+<wire x1="0" y1="100" x2="0" y2="0" width="0" layer="20"/>
 </plain>
 <libraries>
 <library name="con-amp" urn="urn:adsk.eagle:library:127">
