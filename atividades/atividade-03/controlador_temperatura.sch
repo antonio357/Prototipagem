@@ -7800,12 +7800,15 @@ Source: http://www.bourns.com/data/global/PDFs/3223.PDF</description>
 <part name="PWR" library="con-phoenix-508" library_urn="urn:adsk.eagle:library:176" deviceset="MKDSN1,5/2-5,08" device="" package3d_urn="urn:adsk.eagle:package:9630/1"/>
 <part name="GND2" library="supply1" library_urn="urn:adsk.eagle:library:371" deviceset="GND" device=""/>
 <part name="LCD" library="HD44780LCD" deviceset="LCD-HD44780" device="20X4-4HOLES" technology="4-HOLES"/>
-<part name="R6" library="resistor-power" library_urn="urn:adsk.eagle:library:344" deviceset="R" device="RS1/8" package3d_urn="urn:adsk.eagle:package:25168/1" value="470"/>
+<part name="R6" library="resistor-power" library_urn="urn:adsk.eagle:library:344" deviceset="R" device="RS1/8" package3d_urn="urn:adsk.eagle:package:25168/1" value="220"/>
 <part name="GND3" library="supply1" library_urn="urn:adsk.eagle:library:371" deviceset="GND" device=""/>
 <part name="P+2" library="supply1" library_urn="urn:adsk.eagle:library:371" deviceset="VCC" device="" value="+5V"/>
 <part name="P+3" library="supply1" library_urn="urn:adsk.eagle:library:371" deviceset="VCC" device="" value="+5V"/>
 <part name="GND5" library="supply1" library_urn="urn:adsk.eagle:library:371" deviceset="GND" device=""/>
 <part name="P+4" library="supply1" library_urn="urn:adsk.eagle:library:371" deviceset="VCC" device="" value="+5V"/>
+<part name="PUMP_LED1" library="con-amp" library_urn="urn:adsk.eagle:library:127" deviceset="MTA02-100" device="" package3d_urn="urn:adsk.eagle:package:8081649/1"/>
+<part name="Q3" library="transistor-npn" library_urn="urn:adsk.eagle:library:398" deviceset="BC337*" device="" package3d_urn="urn:adsk.eagle:package:28523/2"/>
+<part name="R7" library="resistor-power" library_urn="urn:adsk.eagle:library:344" deviceset="R" device="RS1/8" package3d_urn="urn:adsk.eagle:package:25168/1" value="470"/>
 </parts>
 <sheets>
 <sheet>
@@ -7932,6 +7935,18 @@ Source: http://www.bourns.com/data/global/PDFs/3223.PDF</description>
 </instance>
 <instance part="P+4" gate="VCC" x="73.66" y="17.78" smashed="yes" rot="R90">
 <attribute name="VALUE" x="76.2" y="15.24" size="1.778" layer="96" rot="R180"/>
+</instance>
+<instance part="PUMP_LED1" gate="G$1" x="78.74" y="-25.4" smashed="yes" rot="R270">
+<attribute name="NAME" x="81.28" y="-30.48" size="1.778" layer="95"/>
+<attribute name="VALUE" x="74.93" y="-30.48" size="1.778" layer="96" rot="R270"/>
+</instance>
+<instance part="Q3" gate="G$1" x="60.96" y="-33.02" smashed="yes" rot="R270">
+<attribute name="NAME" x="55.88" y="-40.64" size="1.778" layer="95"/>
+<attribute name="VALUE" x="55.88" y="-38.1" size="1.778" layer="96"/>
+</instance>
+<instance part="R7" gate="G$1" x="60.96" y="-22.86" smashed="yes" rot="R180">
+<attribute name="NAME" x="64.77" y="-24.2316" size="1.778" layer="95" rot="R180"/>
+<attribute name="VALUE" x="64.77" y="-19.939" size="1.778" layer="96" rot="R180"/>
 </instance>
 </instances>
 <busses>
