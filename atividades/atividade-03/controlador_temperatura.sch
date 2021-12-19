@@ -7437,6 +7437,8 @@ Source: http://www.bourns.com/data/global/PDFs/3223.PDF</description>
 <part name="PUMP" library="con-phoenix-508" library_urn="urn:adsk.eagle:library:176" deviceset="MKDSN1,5/2-5,08" device="" package3d_urn="urn:adsk.eagle:package:9630/1"/>
 <part name="R5" library="resistor-power" library_urn="urn:adsk.eagle:library:344" deviceset="R" device="RS1/8" package3d_urn="urn:adsk.eagle:package:25168/1" value="470"/>
 <part name="PUMP_LED" library="con-amp" library_urn="urn:adsk.eagle:library:127" deviceset="MTA02-100" device="" package3d_urn="urn:adsk.eagle:package:8081649/1"/>
+<part name="PWR" library="con-phoenix-508" library_urn="urn:adsk.eagle:library:176" deviceset="MKDSN1,5/2-5,08" device="" package3d_urn="urn:adsk.eagle:package:9630/1"/>
+<part name="GND2" library="supply1" library_urn="urn:adsk.eagle:library:371" deviceset="GND" device=""/>
 </parts>
 <sheets>
 <sheet>
@@ -7530,6 +7532,17 @@ Source: http://www.bourns.com/data/global/PDFs/3223.PDF</description>
 <attribute name="NAME" x="27.94" y="-20.32" size="1.778" layer="95"/>
 <attribute name="VALUE" x="21.59" y="-20.32" size="1.778" layer="96" rot="R270"/>
 </instance>
+<instance part="PWR" gate="-1" x="-22.86" y="-43.18" smashed="yes">
+<attribute name="NAME" x="-19.812" y="-44.069" size="1.778" layer="95"/>
+<attribute name="VALUE" x="-25.4" y="-46.863" size="1.778" layer="96"/>
+</instance>
+<instance part="PWR" gate="-2" x="-22.86" y="-48.26" smashed="yes">
+<attribute name="NAME" x="-19.812" y="-49.149" size="1.778" layer="95"/>
+<attribute name="VALUE" x="-25.4" y="-51.943" size="1.778" layer="96"/>
+</instance>
+<instance part="GND2" gate="1" x="-38.1" y="-48.26" smashed="yes" rot="R270">
+<attribute name="VALUE" x="-40.64" y="-45.72" size="1.778" layer="96" rot="R270"/>
+</instance>
 </instances>
 <busses>
 </busses>
@@ -7547,6 +7560,11 @@ Source: http://www.bourns.com/data/global/PDFs/3223.PDF</description>
 <pinref part="GND1" gate="1" pin="GND"/>
 <pinref part="Q2" gate="G$1" pin="E"/>
 <wire x1="-35.56" y1="-15.24" x2="-25.4" y2="-15.24" width="0.1524" layer="91"/>
+</segment>
+<segment>
+<pinref part="GND2" gate="1" pin="GND"/>
+<pinref part="PWR" gate="-2" pin="KL"/>
+<wire x1="-35.56" y1="-48.26" x2="-25.4" y2="-48.26" width="0.1524" layer="91"/>
 </segment>
 </net>
 <net name="N$1" class="0">
@@ -7602,6 +7620,11 @@ Source: http://www.bourns.com/data/global/PDFs/3223.PDF</description>
 <pinref part="PUMP" gate="-1" pin="KL"/>
 <wire x1="20.32" y1="-2.54" x2="12.7" y2="-2.54" width="0.1524" layer="91"/>
 <label x="7.62" y="-2.54" size="1.778" layer="95"/>
+</segment>
+<segment>
+<pinref part="PWR" gate="-1" pin="KL"/>
+<wire x1="-25.4" y1="-43.18" x2="-35.56" y2="-43.18" width="0.1524" layer="91"/>
+<label x="-40.64" y="-43.18" size="1.778" layer="95"/>
 </segment>
 </net>
 <net name="N$5" class="0">
