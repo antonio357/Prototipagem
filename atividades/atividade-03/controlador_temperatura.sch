@@ -7430,6 +7430,13 @@ Source: http://www.bourns.com/data/global/PDFs/3223.PDF</description>
 <part name="R3" library="resistor-power" library_urn="urn:adsk.eagle:library:344" deviceset="R" device="RS1/8" package3d_urn="urn:adsk.eagle:package:25168/1" value="470"/>
 <part name="BUTTONS" library="con-amp" library_urn="urn:adsk.eagle:library:127" deviceset="MTA06-100" device="" package3d_urn="urn:adsk.eagle:package:8081635/1"/>
 <part name="HTR_LED" library="con-amp" library_urn="urn:adsk.eagle:library:127" deviceset="MTA02-100" device="" package3d_urn="urn:adsk.eagle:package:8081649/1"/>
+<part name="R4" library="resistor-power" library_urn="urn:adsk.eagle:library:344" deviceset="R" device="RS1/8" package3d_urn="urn:adsk.eagle:package:25168/1" value="470"/>
+<part name="Q2" library="transistor-npn" library_urn="urn:adsk.eagle:library:398" deviceset="BC337*" device="" package3d_urn="urn:adsk.eagle:package:28523/2"/>
+<part name="GND1" library="supply1" library_urn="urn:adsk.eagle:library:371" deviceset="GND" device=""/>
+<part name="D2" library="diode" library_urn="urn:adsk.eagle:library:210" deviceset="1N4004" device="" package3d_urn="urn:adsk.eagle:package:43336/1" value="1N4007"/>
+<part name="PUMP" library="con-phoenix-508" library_urn="urn:adsk.eagle:library:176" deviceset="MKDSN1,5/2-5,08" device="" package3d_urn="urn:adsk.eagle:package:9630/1"/>
+<part name="R5" library="resistor-power" library_urn="urn:adsk.eagle:library:344" deviceset="R" device="RS1/8" package3d_urn="urn:adsk.eagle:package:25168/1" value="470"/>
+<part name="PUMP_LED" library="con-amp" library_urn="urn:adsk.eagle:library:127" deviceset="MTA02-100" device="" package3d_urn="urn:adsk.eagle:package:8081649/1"/>
 </parts>
 <sheets>
 <sheet>
@@ -7463,15 +7470,15 @@ Source: http://www.bourns.com/data/global/PDFs/3223.PDF</description>
 <attribute name="NAME" x="25.908" y="37.211" size="1.778" layer="95"/>
 <attribute name="VALUE" x="20.32" y="34.417" size="1.778" layer="96"/>
 </instance>
-<instance part="DS18B20" gate="-1" x="40.64" y="-38.1" smashed="yes">
-<attribute name="NAME" x="43.688" y="-38.989" size="1.778" layer="95"/>
-<attribute name="VALUE" x="38.1" y="-34.163" size="1.778" layer="96"/>
+<instance part="DS18B20" gate="-1" x="111.76" y="-33.02" smashed="yes">
+<attribute name="NAME" x="114.808" y="-33.909" size="1.778" layer="95"/>
+<attribute name="VALUE" x="109.22" y="-29.083" size="1.778" layer="96"/>
 </instance>
-<instance part="DS18B20" gate="-2" x="40.64" y="-43.18" smashed="yes">
-<attribute name="NAME" x="43.688" y="-44.069" size="1.778" layer="95"/>
+<instance part="DS18B20" gate="-2" x="111.76" y="-38.1" smashed="yes">
+<attribute name="NAME" x="114.808" y="-38.989" size="1.778" layer="95"/>
 </instance>
-<instance part="DS18B20" gate="-3" x="40.64" y="-48.26" smashed="yes">
-<attribute name="NAME" x="43.688" y="-49.149" size="1.778" layer="95"/>
+<instance part="DS18B20" gate="-3" x="111.76" y="-43.18" smashed="yes">
+<attribute name="NAME" x="114.808" y="-44.069" size="1.778" layer="95"/>
 </instance>
 <instance part="P+1" gate="VCC" x="96.52" y="5.08" smashed="yes">
 <attribute name="VALUE" x="93.98" y="2.54" size="1.778" layer="96" rot="R90"/>
@@ -7492,6 +7499,37 @@ Source: http://www.bourns.com/data/global/PDFs/3223.PDF</description>
 <attribute name="NAME" x="27.94" y="25.4" size="1.778" layer="95"/>
 <attribute name="VALUE" x="21.59" y="25.4" size="1.778" layer="96" rot="R270"/>
 </instance>
+<instance part="R4" gate="G$1" x="-20.32" y="-2.54" smashed="yes" rot="R90">
+<attribute name="NAME" x="-21.6916" y="-6.35" size="1.778" layer="95" rot="R90"/>
+<attribute name="VALUE" x="-17.399" y="-6.35" size="1.778" layer="96" rot="R90"/>
+</instance>
+<instance part="Q2" gate="G$1" x="-20.32" y="-12.7" smashed="yes" rot="R270">
+<attribute name="NAME" x="-25.4" y="-20.32" size="1.778" layer="95"/>
+<attribute name="VALUE" x="-25.4" y="-17.78" size="1.778" layer="96"/>
+</instance>
+<instance part="GND1" gate="1" x="-38.1" y="-15.24" smashed="yes" rot="R270">
+<attribute name="VALUE" x="-40.64" y="-12.7" size="1.778" layer="96" rot="R270"/>
+</instance>
+<instance part="D2" gate="1" x="-7.62" y="-17.78" smashed="yes">
+<attribute name="NAME" x="-5.08" y="-17.2974" size="1.778" layer="95"/>
+<attribute name="VALUE" x="-5.08" y="-20.0914" size="1.778" layer="96"/>
+</instance>
+<instance part="PUMP" gate="-1" x="22.86" y="-2.54" smashed="yes">
+<attribute name="NAME" x="25.908" y="-3.429" size="1.778" layer="95"/>
+<attribute name="VALUE" x="20.32" y="-6.223" size="1.778" layer="96"/>
+</instance>
+<instance part="PUMP" gate="-2" x="22.86" y="-7.62" smashed="yes">
+<attribute name="NAME" x="25.908" y="-8.509" size="1.778" layer="95"/>
+<attribute name="VALUE" x="20.32" y="-11.303" size="1.778" layer="96"/>
+</instance>
+<instance part="R5" gate="G$1" x="10.16" y="-17.78" smashed="yes" rot="R180">
+<attribute name="NAME" x="13.97" y="-19.1516" size="1.778" layer="95" rot="R180"/>
+<attribute name="VALUE" x="13.97" y="-14.859" size="1.778" layer="96" rot="R180"/>
+</instance>
+<instance part="PUMP_LED" gate="G$1" x="25.4" y="-15.24" smashed="yes" rot="R270">
+<attribute name="NAME" x="27.94" y="-20.32" size="1.778" layer="95"/>
+<attribute name="VALUE" x="21.59" y="-20.32" size="1.778" layer="96" rot="R270"/>
+</instance>
 </instances>
 <busses>
 </busses>
@@ -7504,6 +7542,11 @@ Source: http://www.bourns.com/data/global/PDFs/3223.PDF</description>
 <pinref part="R2" gate="G$1" pin="2"/>
 <wire x1="-35.56" y1="38.1" x2="-35.56" y2="30.48" width="0.1524" layer="91"/>
 <junction x="-35.56" y="30.48"/>
+</segment>
+<segment>
+<pinref part="GND1" gate="1" pin="GND"/>
+<pinref part="Q2" gate="G$1" pin="E"/>
+<wire x1="-35.56" y1="-15.24" x2="-25.4" y2="-15.24" width="0.1524" layer="91"/>
 </segment>
 </net>
 <net name="N$1" class="0">
@@ -7547,6 +7590,19 @@ Source: http://www.bourns.com/data/global/PDFs/3223.PDF</description>
 <wire x1="20.32" y1="43.18" x2="12.7" y2="43.18" width="0.1524" layer="91"/>
 <label x="7.62" y="43.18" size="1.778" layer="95"/>
 </segment>
+<segment>
+<pinref part="D2" gate="1" pin="C"/>
+<pinref part="R5" gate="G$1" pin="2"/>
+<wire x1="-5.08" y1="-17.78" x2="5.08" y2="-17.78" width="0.1524" layer="91"/>
+<wire x1="5.08" y1="-17.78" x2="5.08" y2="-22.86" width="0.1524" layer="91"/>
+<junction x="5.08" y="-17.78"/>
+<label x="5.08" y="-25.4" size="1.778" layer="95"/>
+</segment>
+<segment>
+<pinref part="PUMP" gate="-1" pin="KL"/>
+<wire x1="20.32" y1="-2.54" x2="12.7" y2="-2.54" width="0.1524" layer="91"/>
+<label x="7.62" y="-2.54" size="1.778" layer="95"/>
+</segment>
 </net>
 <net name="N$5" class="0">
 <segment>
@@ -7560,6 +7616,43 @@ Source: http://www.bourns.com/data/global/PDFs/3223.PDF</description>
 <pinref part="R1" gate="G$1" pin="2"/>
 <wire x1="-20.32" y1="50.8" x2="-25.4" y2="50.8" width="0.1524" layer="91"/>
 <label x="-30.48" y="50.8" size="1.778" layer="95"/>
+</segment>
+</net>
+<net name="N$2" class="0">
+<segment>
+<pinref part="R4" gate="G$1" pin="1"/>
+<pinref part="Q2" gate="G$1" pin="B"/>
+<wire x1="-20.32" y1="-7.62" x2="-20.32" y2="-10.16" width="0.1524" layer="91"/>
+</segment>
+</net>
+<net name="N$4" class="0">
+<segment>
+<pinref part="Q2" gate="G$1" pin="C"/>
+<pinref part="PUMP_LED" gate="G$1" pin="1"/>
+<wire x1="-15.24" y1="-15.24" x2="17.78" y2="-15.24" width="0.1524" layer="91"/>
+<wire x1="17.78" y1="-15.24" x2="22.86" y2="-15.24" width="0.1524" layer="91"/>
+<wire x1="-15.24" y1="-15.24" x2="-15.24" y2="-17.78" width="0.1524" layer="91"/>
+<junction x="-15.24" y="-15.24"/>
+<pinref part="D2" gate="1" pin="A"/>
+<wire x1="-15.24" y1="-17.78" x2="-10.16" y2="-17.78" width="0.1524" layer="91"/>
+<pinref part="PUMP" gate="-2" pin="KL"/>
+<wire x1="20.32" y1="-7.62" x2="17.78" y2="-7.62" width="0.1524" layer="91"/>
+<wire x1="17.78" y1="-7.62" x2="17.78" y2="-15.24" width="0.1524" layer="91"/>
+<junction x="17.78" y="-15.24"/>
+</segment>
+</net>
+<net name="N$6" class="0">
+<segment>
+<pinref part="R5" gate="G$1" pin="1"/>
+<pinref part="PUMP_LED" gate="G$1" pin="2"/>
+<wire x1="15.24" y1="-17.78" x2="22.86" y2="-17.78" width="0.1524" layer="91"/>
+</segment>
+</net>
+<net name="D6" class="0">
+<segment>
+<pinref part="R4" gate="G$1" pin="2"/>
+<wire x1="-20.32" y1="2.54" x2="-27.94" y2="2.54" width="0.1524" layer="91"/>
+<label x="-33.02" y="2.54" size="1.778" layer="95"/>
 </segment>
 </net>
 </nets>
