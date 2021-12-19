@@ -7810,6 +7810,8 @@ Source: http://www.bourns.com/data/global/PDFs/3223.PDF</description>
 <part name="Q3" library="transistor-npn" library_urn="urn:adsk.eagle:library:398" deviceset="BC337*" device="" package3d_urn="urn:adsk.eagle:package:28523/2"/>
 <part name="R7" library="resistor-power" library_urn="urn:adsk.eagle:library:344" deviceset="R" device="RS1/8" package3d_urn="urn:adsk.eagle:package:25168/1" value="470"/>
 <part name="GND6" library="supply1" library_urn="urn:adsk.eagle:library:371" deviceset="GND" device=""/>
+<part name="RST" library="con-amp" library_urn="urn:adsk.eagle:library:127" deviceset="MTA02-100" device="" package3d_urn="urn:adsk.eagle:package:8081649/1"/>
+<part name="GND7" library="supply1" library_urn="urn:adsk.eagle:library:371" deviceset="GND" device=""/>
 </parts>
 <sheets>
 <sheet>
@@ -7952,6 +7954,13 @@ Source: http://www.bourns.com/data/global/PDFs/3223.PDF</description>
 <instance part="GND6" gate="1" x="88.9" y="-15.24" smashed="yes" rot="R270">
 <attribute name="VALUE" x="86.36" y="-12.7" size="1.778" layer="96" rot="R270"/>
 </instance>
+<instance part="RST" gate="G$1" x="104.14" y="-43.18" smashed="yes" rot="R270">
+<attribute name="NAME" x="106.68" y="-48.26" size="1.778" layer="95"/>
+<attribute name="VALUE" x="100.33" y="-48.26" size="1.778" layer="96" rot="R270"/>
+</instance>
+<instance part="GND7" gate="1" x="91.44" y="-43.18" smashed="yes" rot="R270">
+<attribute name="VALUE" x="88.9" y="-40.64" size="1.778" layer="96" rot="R270"/>
+</instance>
 </instances>
 <busses>
 </busses>
@@ -8014,6 +8023,11 @@ Source: http://www.bourns.com/data/global/PDFs/3223.PDF</description>
 <pinref part="GND6" gate="1" pin="GND"/>
 <pinref part="Q3" gate="G$1" pin="E"/>
 <wire x1="91.44" y1="-15.24" x2="93.98" y2="-15.24" width="0.1524" layer="91"/>
+</segment>
+<segment>
+<pinref part="GND7" gate="1" pin="GND"/>
+<pinref part="RST" gate="G$1" pin="1"/>
+<wire x1="93.98" y1="-43.18" x2="101.6" y2="-43.18" width="0.1524" layer="91"/>
 </segment>
 </net>
 <net name="N$1" class="0">
@@ -8225,6 +8239,13 @@ Source: http://www.bourns.com/data/global/PDFs/3223.PDF</description>
 <pinref part="R7" gate="G$1" pin="2"/>
 <wire x1="86.36" y1="-7.62" x2="83.82" y2="-7.62" width="0.1524" layer="91"/>
 <label x="78.74" y="-7.62" size="1.778" layer="95"/>
+</segment>
+</net>
+<net name="RST" class="0">
+<segment>
+<pinref part="RST" gate="G$1" pin="2"/>
+<wire x1="101.6" y1="-45.72" x2="99.06" y2="-45.72" width="0.1524" layer="91"/>
+<label x="93.98" y="-45.72" size="1.778" layer="95"/>
 </segment>
 </net>
 </nets>
