@@ -8632,11 +8632,6 @@ straight</description>
 <wire x1="180.34" y1="7.62" x2="190.5" y2="7.62" width="0.1524" layer="91"/>
 </segment>
 <segment>
-<pinref part="V1" gate="1" pin="A"/>
-<pinref part="GND5" gate="1" pin="GND"/>
-<wire x1="114.3" y1="15.24" x2="116.84" y2="15.24" width="0.1524" layer="91"/>
-</segment>
-<segment>
 <pinref part="GND6" gate="1" pin="GND"/>
 <pinref part="Q3" gate="G$1" pin="E"/>
 <wire x1="177.8" y1="25.4" x2="180.34" y2="25.4" width="0.1524" layer="91"/>
@@ -8705,6 +8700,11 @@ straight</description>
 <wire x1="104.14" y1="33.02" x2="99.06" y2="33.02" width="0.1524" layer="91"/>
 <junction x="104.14" y="33.02"/>
 <pinref part="GND11" gate="1" pin="GND"/>
+</segment>
+<segment>
+<pinref part="V1" gate="1" pin="A"/>
+<pinref part="GND5" gate="1" pin="GND"/>
+<wire x1="114.3" y1="15.24" x2="116.84" y2="15.24" width="0.1524" layer="91"/>
 </segment>
 </net>
 <net name="N$1" class="0">
